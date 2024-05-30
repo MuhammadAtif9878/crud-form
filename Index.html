@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="Index.css">
+  <script src="Index.js"></script>
+  <title>Document</title>
+</head>
+<body>
+   <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-md-3"></div>
+      <div class="main col-md-6 mt-5 color-set">
+      <form id="resetForm">
+        <h3 class="text-center pt-5 pb-5">Crud form</h3>
+        <div class="form-group">
+          <label for="Name">Name</label>
+          <input type="Name" class="form-control" id="Name"  placeholder="Enter name">
+          
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="Email" class="form-control" id="Email"  placeholder="Enter email">
+          
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1"> Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter password">
+        </div>
+        
+        <button type="submit" onclick="addItem()" value="submit" class="btn btn-primary mb-5">Submit</button>
+      </form>
+    </div>
+    <div class="col-md-3">
+     
+    </div>
+     
+
+
+
+     <!-- Modal -->
+     <div class="modal fade inputGetData" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+     <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body" id="Modal">
+
+          
+         </div>
+         <div class="modal-footer">
+            
+         </div>
+       </div>
+     </div>
+   </div>
+
+  </div>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+    <table class="table table-striped table-dark mt-5">
+      <thead>
+      <tr>
+       <th>Name</th>
+       <th>Email</th>
+       <th>Password</th>
+       <th>Edit / Delete</th>
+      </tr>
+    </thead>
+      <tbody id="table" class="Email-list" >
+       
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-2"></div>
+  </div>
+   </div> 
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Table</title>
+</head>
+
+<body>
+  <div class="container">
+    <table class="table">
+   
+
+
+      
+      <tr>
+        <td>
+          <table class="table1">
+            <tr>
+              <th>table 1</th>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <table class="table2">
+            <th>table 2</th>
+            <tr>
+             <td>
+              <table class="table6">
+                
+                <tr>
+                  <td>
+                    <table class="tables">
+                      <tr>
+                        <th>table 7</th>
+                      </tr>
+                    </table>
+                  </td>
+                  <td>
+                    <table class="tables">
+                      <tr>
+                        <th>table 8</th>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                 
+                    <td>
+                      <table class="tables">
+                        <tr>
+                          <th>table 9</th>
+                        </tr>
+                      </table>
+                    </td>
+                    <td>
+                      <table class="tables">
+                        <tr>
+                          <th>table 10</th>
+                        </tr>
+                      </table>
+                    </td>
+                </tr>
+              </table>
+
+             </td>
+            </tr>
+          </table>
+        </td>
+       
+
+      </tr>
+
+      <tr>
+        <td>
+
+          <table class="table4">
+            <tr>
+              <th>table 4</th>
+            </tr>
+          </table>
+        </td>
+
+        <td>
+
+          <table class="table5">
+            <tr>
+              <th>table 5</th>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+    
+    </table>
+  </div>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="Index.css">
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <h5 class=" text-center bg-primary text-white p-5"> Please Select Country</h5>
+    <div class="row">
+
+      <div class="col-lg-1"></div>
+      <div class="col-lg-3 bg-dark text-white ">
+        <div class="dropdown">
+          <label for="cars" class="">Select project</label>
+
+          <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+          <br></br>
+          <label for="cars">Select project</label>
+
+          <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row d-flex setting-pad">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-1 text-end pt-4 Box15">
+        <h4>Project1</h4>
+      </div>
+      <div class="col-lg-10 setting-way ">
+
+        <div class="box1">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td class="row">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><input type="checkbox" placeholder="Name" />
+                        </td>
+                        <td>
+                          <input type="text" placeholder="Name" disabled />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+        <div class="box2">
+
+          <table class="table">
+            <tbody>
+              <tr>
+
+                <td class="row">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><input type="checkbox" placeholder="Name" />
+                        </td>
+                        <td>
+                          <input type="text" placeholder="Name" disabled />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+
+          </table>
+
+        </div>
+        <div class="box3">
+
+          <table class="table">
+            <tbody>
+              <tr>
+
+                <td class="row">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><input type="checkbox" placeholder="Name" />
+                        </td>
+                        <td>
+                          <input type="text" placeholder="Name" disabled />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+
+          </table>
+
+        </div>
+        <div class="box3">
+
+          <table class="table">
+            <tbody>
+              <tr>
+
+                <td class="row">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><input type="checkbox" placeholder="Name" />
+                        </td>
+                        <td>
+                          <input type="text" placeholder="Name" disabled />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+
+          </table>
+
+        </div>
+        <div class="box3">
+
+          <table class="table">
+            <tbody>
+              <tr>
+
+                <td class="row">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><input type="checkbox" placeholder="Name" />
+                        </td>
+                        <td>
+                          <input type="text" placeholder="Name" disabled />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+
+          </table>
+
+        </div>
+        <div class="box3">
+
+          <table class="table">
+            <tbody>
+              <tr>
+
+                <td class="row">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><input type="checkbox" placeholder="Name" />
+                        </td>
+                        <td>
+                          <input type="text" placeholder="Name" disabled />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+
+          </table>
+
+        </div>
+        <div class="box3">
+
+          <table class="table">
+            <tbody>
+              <tr>
+
+                <td class="row">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><input type="checkbox" placeholder="Name" />
+                        </td>
+                        <td>
+                          <input type="text" placeholder="Name" disabled />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+
+          </table>
+
+        </div>
+        <div class="box3">
+
+          <table class="table">
+            <tbody>
+              <tr>
+
+                <td class="row">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><input type="checkbox" placeholder="Name" />
+                        </td>
+                        <td>
+                          <input type="text" placeholder="Name" disabled />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+
+          </table>
+
+        </div>
+        <div class="box3">
+
+          <table class="table">
+            <tbody>
+              <tr>
+
+                <td class="row">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><input type="checkbox" placeholder="Name" />
+                        </td>
+                        <td>
+                          <input type="text" placeholder="Name" disabled />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+
+          </table>
+
+        </div>
+        <div class="box3">
+
+          <table class="table">
+            <tbody>
+              <tr>
+
+                <td class="row">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><input type="checkbox" placeholder="Name" />
+                        </td>
+                        <td>
+                          <input type="text" placeholder="Name" disabled />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+</body>
+
+</html>
+
+
+
+
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="Index.css">
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row mt-5 back-groung ">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-7 pt-5">
+        <table class="table">
+          <tbody>
+            <tr>
+              <td class="pt-4">
+                project name </td>
+              <td class="row">
+                <table class="col-md-12">
+                  <tbody>
+                    <tr>
+                      <td><input type="checkbox" placeholder="Name" />
+                      </td>
+                      <td>
+                        <input type="text" placeholder="Name" disabled />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html> --> --> --> -->
